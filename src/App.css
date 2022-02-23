@@ -1,7 +1,7 @@
 .App {
   display: block;
   border: 1px solid gray;
-  margin: 100px;
+  margin: 50px;
   padding:20px 0 0 0;
   border-radius: 10px;
 }
@@ -91,6 +91,11 @@
   transform: rotate(-45deg);
   left: 4px;
   bottom: 2px
+}
+@media only screen and (max-width:500px) {
+  .App{
+    margin:50px 20px;
+  }
 }
 
 @keyframes App-logo-spin {
