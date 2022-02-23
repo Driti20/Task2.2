@@ -1,6 +1,24 @@
 .App {
-  text-align: center;
+  display: block;
+  border: 1px solid gray;
+  margin: 100px;
+  padding:20px 0 0 0;
+  border-radius: 10px;
 }
+.card{
+  display: flex;
+  align-items: center;
+  margin:0 20px;
+  border-bottom:1px solid gray;
+  justify-content: space-between;
+}
+.card>*{
+  margin-bottom: 20px;
+}
+.answer{
+  margin:50px;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +44,53 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.openArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.openArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px
+}
+.closeArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.closeArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px
 }
 
 @keyframes App-logo-spin {

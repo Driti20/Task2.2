@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [hide, setHide] = useState(true);
+
+  const hider = () => {
+    setHide((prev) => !prev);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      {hide ? (
+        <div className="card" onClick={hider}>
+          <div className="question">Why park a domain name in a Parkname ?</div>
+          <div className="openArrow"></div>
+        </div>
+      ) : (
+        <>
+          <div className="card" onClick={hider}>
+            <div className="question">Why park a domain name in a Parkname ?</div>
+            <div className="closeArrow"></div>
+          </div>
+          <p className="answer">
+            Parkname is the leanding industry standard for domain name parking
+            and monetization services. We offer a wide virety of services to
+            help you achieve success.
+          </p>
+        </>
+      )}
     </div>
   );
 }
