@@ -1,6 +1,6 @@
 .App {
   display: block;
-  border: 1px solid rgb(179, 176, 176);
+  border: 1px solid #B3B0B0;
   margin: 50px;
   padding:20px 0 0 0;
   border-radius: 10px;
@@ -9,15 +9,17 @@
   display: flex;
   align-items: center;
   margin:0 20px;
-  border-bottom:1px solid rgb(179, 176, 176);
+  
   justify-content: space-between;
 }
 .card>*{
   margin-bottom: 20px;
 }
 .answer{
-  margin:50px;
+  margin:0 20px;
+  padding: 50px;
   color: rgb(179, 176, 176);
+  border-top:1px solid #B3B0B0;
 }
 
 

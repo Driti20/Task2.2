@@ -20,11 +20,14 @@ function App() {
             <div className="question">Why park a domain name in a Parkname ?</div>
             <div className="closeArrow"></div>
           </div>
-          <p className="answer">
+          <div className="answer">
+          <p>
             Parkname is the leanding industry standard for domain name parking
             and monetization services. We offer a wide virety of services to
             help you achieve success.
           </p>
+          </div>
+          
         </>
       )}
     </div>
